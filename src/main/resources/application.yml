@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/request_portal}
+    username: ${SPRING_DATASOURCE_USERNAME:portal}
+    password: ${SPRING_DATASOURCE_PASSWORD:portal}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+server:
+  port: ${SERVER_PORT:8080}
